@@ -88,6 +88,16 @@ Wiring:
 
 """
 TESTS = [
+    # Meus testes
+    {   "id": "MIDI", "description": "Teste Midi",
+        "source_dir": join(TEST_DIR, "meus", "midi"),
+        "dependencies": [MBED_LIBRARIES]
+    },
+    {   "id": "POT", "description": "Teste Pot",
+        "source_dir": join(TEST_DIR, "meus", "analog"),
+        "dependencies": [MBED_LIBRARIES]
+    },
+    # Automated MBED tests
     # Automated MBED tests
     {
         "id": "MBED_A1", "description": "Basic",
